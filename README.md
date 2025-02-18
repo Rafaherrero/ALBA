@@ -58,12 +58,12 @@ urlpatterns = [
 ]
 ```
 
-Ejecutamos también el siguiente comando:
+Ahora, tenemos que colocar los todos ficheros de la carpeta `pctag` de este repositorio dentro de la carpeta `pctag` que Django ha creado para nuestra aplicación. Si recibimos algún aviso de que se sobrescribirán ficheros, aceptamos el aviso.
+
+Por último, ejecutamos también el siguiente comando:
 ```console
 $ python manage.py migrate
 ```
-
-Por último, tenemos que colocar los todos ficheros de la carpeta `pctag` de este repositorio dentro de la carpeta `pctag` que Django ha creado para nuestra aplicación. Si recibimos algún aviso de que se sobrescribirán ficheros, aceptamos el aviso.
 
 ## Funcionamiento
 

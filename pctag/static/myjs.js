@@ -31,9 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
         updateContador("zero");
         json_final = [];
     });
-    document.getElementById('btn-send').addEventListener('click', function() {
-        enviarCorreo(json_final);
-    });
 });
 
 function updateDiv() {
@@ -84,10 +81,4 @@ function generateJson(decision) {
         q3: document.getElementById("q3-tag").textContent
     };
     return json;
-}
-
-function enviarCorreo(json_final) {
-    const datosJson = JSON.stringify(json_final, null, 2);
-    const mailtoLink = `mailto:rherrero@ull.edu.es?subject=Datos pctag&body=${encodeURIComponent(datosJson)}`;
-    window.location.href = mailtoLink;
 }
