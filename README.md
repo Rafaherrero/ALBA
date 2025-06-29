@@ -1,19 +1,19 @@
 # PCTAG - Una aplicación para etiquetar casos relacionados con el Pensamiento Computacional
 
 <p align="center">
-  <img src="https://github.com/Rafaherrero/pctag/blob/main/imgs/logo_pctag.png" style="width:300px"/>
+  <img src="https://github.com/Rafaherrero/pctag/blob/main/imgs/LogoALBA.png" style="width:300px"/>
 </p>
 <p align="center"><em>Imagen generada con Inteligencia Artificial (DALL·E)</em></p>
 
 Los sistemas de Inteligencia Artificial necesitan miles/millones de casos de los que extraer patrones con los que posteriormente calcular una salida. Una de las técnicas más utilizadas se basa en el aprendizaje supervisado, donde los datos están etiquetados para poder determinar correctamente cuál es la salida esperada.
 
-Sin embargo, obtener estos datos previamente etiquetado requiere de un gran trabajo humano, por lo que con este proyecto se plantea una aplicación web para aligerar este proceso. *PCTAG* genera casos de manera aleatoria relacionados con el desarrollo de habilidades de Pensamiento Computacional, de manera que un profesional pueda indicar si esa persona debe continuar con el concepto que estaba trabajando, volver al concepto anterior o pasar el siguiente. Esta información servirá para entrenar un sistema de aprendizaje adaptativo basado en emociones para el entrenamiento de habilidades de Pensamiento Computacional [1].
+Sin embargo, obtener estos datos previamente etiquetado requiere de un gran trabajo humano, por lo que con este proyecto se plantea una aplicación web para aligerar este proceso. *ALBA* genera casos de manera aleatoria relacionados con el desarrollo de habilidades de Pensamiento Computacional, de manera que un profesional pueda indicar si esa persona debe continuar con el concepto que estaba trabajando, volver al concepto anterior o pasar el siguiente. Esta información servirá para entrenar un sistema de aprendizaje adaptativo basado en emociones para el entrenamiento de habilidades de Pensamiento Computacional [1].
 
 [1] Herrero-Álvarez, R. (2023). Development of an open-source emotion-based adaptive learning support system using computational thinking activities. *Proceedings of the 2023 Conference on Innovation and Technology in Computer Science Education V. 2*, 601-602.  [https://doi.org/10.1145/3587103.3594141](https://doi.org/10.1145/3587103.3594141).
 
 ## Descripción
 
-*PCTAG* consiste en una página web donde se mostrarán diferentes casos de manera aleatoria teniendo en cuenta las siguientes 10 variables:
+*ALBA* consiste en una página web donde se mostrarán diferentes casos de manera aleatoria teniendo en cuenta las siguientes 10 variables:
 1. Género: en este caso se contempla mujer y hombre.
 2. Edad: en un rango de 6 a 19 años.
 3. Conceptos: diferentes conceptos de programación, en concreto secuencias, bucles, condicionales, variables, funciones y eventos.
@@ -30,10 +30,10 @@ Con esta información, un profesional deberá marcar si esa persona debe realiza
 <p align="center">
   <img src="https://github.com/Rafaherrero/pctag/blob/main/imgs/pctag.gif" style="width:700px"/>
 </p>
-<p align="center"><em>GIF mostrando el funcionamiento de PCTAG</em></p>
+<p align="center"><em>GIF mostrando el funcionamiento de ALBA</em></p>
 
 ## Instalación
-*PCTAG* utiliza Django como framework para el desarrollo de la aplicación web, por lo que es indispensable que lo tengamos instalado en nuestro sistema, comenzando con Python y, preferiblemente, un gestor de paquetes como *pip*. Puedes consultar como instalar ambos desde las páginas web oficiales: [Instalar Python](https://wiki.python.org/moin/BeginnersGuide/Download); [Instalar *pip*](https://pip.pypa.io/en/stable/installation/).
+*ALBA* utiliza Django como framework para el desarrollo de la aplicación web, por lo que es indispensable que lo tengamos instalado en nuestro sistema, comenzando con Python y, preferiblemente, un gestor de paquetes como *pip*. Puedes consultar como instalar ambos desde las páginas web oficiales: [Instalar Python](https://wiki.python.org/moin/BeginnersGuide/Download); [Instalar *pip*](https://pip.pypa.io/en/stable/installation/).
 
 Una vez lo tengamos, es necesario ejecutar el siguiente comando para instalarlo:
 ```console
@@ -45,20 +45,20 @@ Con Django ya instalado lo primero que tenemos que hacer es crear un proyecto ej
 $ django-admin  startproject  miproyecto
 ```
 
-Ahora, nos desplazamos a la carpeta `miproyecto` y creamos nuestra aplicación, *PCTAG*, ejecutando este comando:
+Ahora, nos desplazamos a la carpeta `miproyecto` y creamos nuestra aplicación, *ALBA*, ejecutando este comando:
 ```console
-$ python  manage.py  startapp  pctag
+$ python  manage.py  startapp  ALBA
 ```
 
-Una vez creada la aplicación, tenemos que modificar el fichero `settings.py` de `miproyecto`, añadiendo la aplicación que acabamos de crear, `pctag`, a la lista de aplicación instaladas, `INSTALLED_APPS`. También tenemos que modificar el fichero `urls.py` de `miproyecto` e incluir la ruta a la aplicación creada, quedando como sigue:
+Una vez creada la aplicación, tenemos que modificar el fichero `settings.py` de `miproyecto`, añadiendo la aplicación que acabamos de crear, `ALBA`, a la lista de aplicación instaladas, `INSTALLED_APPS`. También tenemos que modificar el fichero `urls.py` de `miproyecto` e incluir la ruta a la aplicación creada, quedando como sigue:
 ```
 urlpatterns = [
-	path('', include('pctag.urls')),
+	path('', include('alba.urls')),
 	path('admin/', admin.site.urls)
 ]
 ```
 
-Ahora, tenemos que colocar los todos ficheros de la carpeta `pctag` de este repositorio dentro de la carpeta `pctag` que Django ha creado para nuestra aplicación. Si recibimos algún aviso de que se sobrescribirán ficheros, aceptamos el aviso.
+Ahora, tenemos que colocar los todos ficheros de la carpeta `ALBA` de este repositorio dentro de la carpeta `ALBA` que Django ha creado para nuestra aplicación. Si recibimos algún aviso de que se sobrescribirán ficheros, aceptamos el aviso.
 
 Por último, ejecutamos también el siguiente comando:
 ```console
