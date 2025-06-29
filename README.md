@@ -1,7 +1,7 @@
-# PCTAG - Una aplicación para etiquetar casos relacionados con el Pensamiento Computacional
+# ALBA - Automated Labeling Builder Assistant
 
 <p align="center">
-  <img src="https://github.com/Rafaherrero/pctag/blob/main/imgs/LogoALBA.png" style="width:300px"/>
+  <img src="https://github.com/Rafaherrero/ALBA/blob/main/imgs/LogoALBA.png" style="width:300px"/>
 </p>
 <p align="center"><em>Imagen generada con Inteligencia Artificial (DALL·E)</em></p>
 
