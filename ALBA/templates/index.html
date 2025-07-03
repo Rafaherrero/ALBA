@@ -24,7 +24,7 @@
   <nav class="navbar navbar-light sticky-top" style="background-color: #c5a1f2;">
     <div class="container-fluid justify-content-center">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="{% static 'img/favicon.png' %}" alt="Logo ALBA" width="60" height="60"
+        <img src="{% static 'img/favicon.png' %}" alt="Logo ALBA" width="50" height="50"
           class="d-inline-block align-text-top me-2">
         <strong>ALBA</strong>
       </a>
@@ -34,40 +34,40 @@
   <div class="container mt-5" id="case-content">
     <div class="row">
       <div class="col">
-        <h1>Una persona, <strong id="gender-tag">{{ gender }}</strong>, de <strong id="age-tag">{{ age }}</strong> años, ha estado trabajando los conceptos de <strong id="concepts-tag">{{ concepts }}</strong>. Ha necesitado {% if tries == 1 %}
+        <h2>Una persona, <strong id="gender-tag">{{ gender }}</strong>, de <strong id="age-tag">{{ age }}</strong> años, ha estado trabajando los conceptos de <strong id="concepts-tag">{{ concepts }}</strong>. Ha necesitado {% if tries == 1 %}
                   <strong id="tries-tag">{{ tries }}</strong> intento
                 {% else %}
                 <strong id="tries-tag">{{ tries }}</strong> intentos
-                {% endif %} para superarlos. Además, ha obtenido una calificación de <strong id="calification-tag">{{ calification }}</strong>. <strong id="help-tag">{{ help }}</strong> necesitó ayuda. Las emociones que ha sentido son mayoritariamente <strong id="emotions-tag">{{ emotions }}</strong>.</h1>
+                {% endif %} para superarlos. Además, ha obtenido una calificación de <strong id="calification-tag">{{ calification }}</strong>. <strong id="help-tag">{{ help }}</strong> necesitó ayuda. Las emociones que ha sentido son mayoritariamente <strong id="emotions-tag">{{ emotions }}</strong>.</h2>
         </h1>
         <br>
-        <h1>Su contestación al cuestionario ha sido la siguiente (1-5):</h1>
+        <h2>Su contestación al cuestionario ha sido la siguiente (1-5):</h2>
         <ul>
           <li>
-            <h3>¿Te han gustado estas actividades?: <strong id="q1-tag">{{ q1 }}</strong></h3>
+            <h4>¿Te han gustado estas actividades?: <strong id="q1-tag">{{ q1 }}</strong></h4>
           </li>
           <li>
-            <h3>¿Crees que necesitas mejorar?: <strong id="q2-tag">{{ q2 }}</strong></h3>
+            <h4>¿Crees que necesitas mejorar?: <strong id="q2-tag">{{ q2 }}</strong></h4>
           </li>
           <li>
-            <h3>¿Te ha resultado fácil?: <strong id="q3-tag">{{ q3 }}</strong></h3>
+            <h4>¿Te ha resultado fácil?: <strong id="q3-tag">{{ q3 }}</strong></h4>
           </li>
         </ul>
-        <h1 class="text-center">¿Qué debe hacer el sistema?</h1>
+        <h2 class="text-center">¿Qué debe hacer el sistema?</h2>
       </div>
     </div>
   </div>
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col text-center">
-        <button type="button" class="btn btn-primary btn-lg" id="btn-previous">Concepto anterior</button>
+      <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+        <button type="button" class="btn btn-primary btn-lg w-100" id="btn-previous">Concepto anterior</button>
       </div>
-      <div class="col text-center">
-        <button type="button" class="btn btn-primary btn-lg" id="btn-same">Reforzar concepto</button>
+      <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+        <button type="button" class="btn btn-primary btn-lg w-100" id="btn-same">Reforzar concepto</button>
       </div>
-      <div class="col text-center">
-        <button type="button" class="btn btn-primary btn-lg" id="btn-next">Concepto siguiente</button>
+      <div class="col-12 col-md-4 text-center">
+        <button type="button" class="btn btn-primary btn-lg w-100" id="btn-next">Concepto siguiente</button>
       </div>
     </div>
     <div class="row mt-5">
